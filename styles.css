@@ -1,8 +1,12 @@
+
 body {
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 header {
     background-color: #4CAF50;
@@ -29,4 +33,31 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+#balanceChart {
+  display: flex;
+  align-items: flex-end;
+  height: 30px;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.bar {
+  width: 5px;
+  background-color: #4caf50;
+  margin-right: 100px;
+}
+
+.chart-container {
+  width: 800px; /* Set the desired width */
+  height: 400px; /* Set the desired height */
+}
+
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 10px;
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Life's Roulette</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -14,11 +15,18 @@
     <main>
         <button id="start">Start Game</button>
         <div id="game" hidden>
-            <p id="balance">Balance: $1000</p>
+            <p id="wealth">Wealth: $1000</p>
             <p id="event">Random Event: None</p>
-            <button id="next">Next Round</button>
+
+            <button id="next">Press Here For Next Age</button>
+        </div>
+        <div class="chart-container">
+          <canvas id="balanceChart"></canvas>
         </div>
     </main>
     <script src="script.js"></script>
 </body>
+<footer>
+  Developed by Ahmad Nazzal MD PhD in 2023. Inspired by the paper "<a href="https://arxiv.org/abs/1802.07068" target="_blank">Talent vs Luck: the role of randomness in success and failure</a>."
+</footer>
 </html>
