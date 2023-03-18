@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life Simulation Game</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Life's Roulette</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Life Simulation Game</h1>
-        <p>Click "Start" to begin the game.</p>
-        <button id="start">Start</button>
+    <header>
+        <h1>Life's Roulette</h1>
+        <p>Experience the impact of randomness on your life!</p>
+    </header>
+    <main>
+        <button id="start">Start Game</button>
         <div id="game" hidden>
-            <button id="next">Next</button>
-            <p id="wealth"></p>
-            <p id="event"></p>
-            <div class="chart-container">
-                <canvas id="balanceChart"></canvas>
-            </div>
+            <p id="wealth">Wealth: $1000</p>
+            <p id="event">Random Event: None</p>
+
+            <button id="next">Press Here For Next Year</button>
         </div>
-        <p class="credits">Developed by Ahmad Nazzal MD, PhD in 2023. Inspired by a research paper on the impact of random events on wealth throughout a lifetime.</p>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <div class="chart-container">
+          <canvas id="balanceChart"></canvas>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
+<footer>
+  Developed by Ahmad Nazzal MD PhD in 2023. Inspired by the paper "<a href="https://arxiv.org/abs/1802.07068" target="_blank">Talent vs Luck: the role of randomness in success and failure</a>."
+</footer>
 </html>
